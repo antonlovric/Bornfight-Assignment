@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <script
+      src="https://unpkg.com/swiper@7/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./scripts/script.js" defer></script>
+
+    <title>IT Conference</title>
+  </head>
+  <body>
+    <section class="hero">
+      <header class="header">
+        <div class="headerInfoContainer">
+          <img src="images/logo.png" alt="Logo" class="logo" />
+          <h3 class="companyName">shape</h3>
+          <p class="headerInfo">03-06 Nov. 2021, Split, Croatia</p>
+        </div>
+        <nav class="navContainer">
+          <a href="#" class="navLink">Schedule</a>
+          <a href="#" class="navLink">Location</a>
+          <div class="hamburger">
+            <div class="hamburgerLine"></div>
+            <div class="hamburgerLine"></div>
+          </div>
+          <!-- <img src="./images/hamburger.png" alt="Hamburger" class="hamburger"> -->
+          <a href="#" class="navLink buyTicketLink">Buy Tickets</a>
+        </nav>
+      </header>
+
+      <div class="gridContainer">
+        <div class="heroTextContainer">
+          <div class="titleContainer">
+            <h1 class="title leftTitle">Beyond the digital</h1>
+          </div>
+          <div class="titleContainer">
+            <h1 class="title rightTitle">looking glass</h1>
+          </div>
+          <div class="infoContainer">
+            <div class="info">
+              <p class="date">
+                03-05 <br />
+                Nov '21
+              </p>
+              <p class="infoText">
+                Conference about the present and future of the digital industry
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+    <h2 class="textBetweenSections">About the conference</h2>
+    <section class="intro">
+      <p class="introText">
+        Shape is a 3 day ICT conference bringing you top of the line keynote
+        speakers in both design and development. Additionally, we are happy to
+        have great workshops, many networking activities and a party to
+        remember!
+      </p>
+
+      <div class="carouselContainer">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="carouselItem hideCategory">
+                <div class="visibleText">
+                  <h2 class="categoryAbbr">PD</h2>
+                  <p class="categoryTitle">
+                    Product <br />
+                    Design
+                  </p>
+                </div>
+                <div class="hiddenTextContainer">
+                  <p class="hiddenText">
+                    Find out the latest trends and buzz for experience research
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="carouselItem hideCategory">
+                <div class="visibleText">
+                  <h2 class="categoryAbbr">UX</h2>
+                  <p class="categoryTitle">
+                    User <br />
+                    Experience
+                  </p>
+                </div>
+                <div class="hiddenTextContainer">
+                  <p class="hiddenText">
+                    Find out the latest trends and buzz for experience research
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="carouselItem hideCategory">
+                <div class="visibleText">
+                  <h2 class="categoryAbbr">FD</h2>
+                  <p class="categoryTitle">
+                    Frontend <br />
+                    Development
+                  </p>
+                </div>
+                <div class="hiddenTextContainer">
+                  <p class="hiddenText">
+                    Find out the latest trends and buzz for experience research
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="carouselItem hideCategory">
+                <div class="visibleText">
+                  <h2 class="categoryAbbr">MD</h2>
+                  <p class="categoryTitle">
+                    Mobile <br />
+                    Development
+                  </p>
+                </div>
+                <div class="hiddenTextContainer">
+                  <p class="hiddenText">
+                    Find out the latest trends and buzz for experience research
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="highlights">
+      <div class="highlightHeading">
+        <h2 class="highlightTitle">Conference Highlights</h2>
+        <div class="scheduleContainer">
+          <p class="scheduleText">View schedule</p>
+        </div>
+      </div>
+
+      <div class="highlightsContainer">
+        <div class="speakerInfoContainer">
+          <p class="speakerInfo">
+            22 <br />
+            Speakers
+          </p>
+          <div class="navButtonContainer">
+            <img
+              src="./images/arrowLeft.png"
+              alt="Navigation Arrow"
+              class="navButton navButtonLeft"
+            />
+            <img
+              src="./images/arrowRight.png"
+              alt="Navigation Arrow"
+              class="navButton navButtonRight"
+            />
+          </div>
+        </div>
+        <div class="speakersContainer">
+          <!-- Slider main container -->
+          <div class="highlightSwiper">
+            <!-- Additional required wrapper -->
+            <div class="highlightSwiper-wrapper">
+              <!-- Slides -->
+              <div class="highlightSwiper-slide">
+                <div class="highlightSpeakerContainer">
+                  <figure>
+                    <img src="./images/merlin.png" alt="" class="speakerImage">
+                    <div class="speakerOverlay"></div>
+                  </figure>
+                  <h3 class="speakerName">Merlin Rebrović</h3>
+                  <p class="speakerRole">UX Design at <strong>Google</strong></p>
+                </div>
+              </div>
+
+              <div class="highlightSwiper-slide">
+                <div class="highlightSpeakerContainer">
+                  <figure>
+                    <img src="./images/magdalena.png" alt="" class="speakerImage">
+                    <div class="speakerOverlay"></div>
+                  </figure>
+                  <h3 class="speakerName">Magdalena Magličić</h3>
+                  <p class="speakerRole">Web and mobile developer at <strong>FIVE</strong></p>
+                </div>
+              </div>
+
+              <div class="highlightSwiper-slide">
+                <div class="highlightSpeakerContainer">
+                  <figure>
+                    <img src="./images/kene.png" alt="" class="speakerImage">
+                    <div class="speakerOverlay"></div>
+                  </figure>
+                  <h3 class="speakerName">Kene Udeze</h3>
+                  <p class="speakerRole">UX Designer at <strong>Booking.com</strong></p>
+                </div>
+              </div>
+
+            </div>
+         </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

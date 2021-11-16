@@ -1,0 +1,48 @@
+.header{
+    color: white;
+    padding: 3em 3em 3em 1.5em;
+
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: black;
+}
+
+.headerInfoContainer{
+    display: flex;
+    gap: 0.2em;
+    align-items: center;
+
+    .companyName{
+        margin-right: 1em;
+        font-size: 1.6rem;
+    }
+}
+
+.navContainer{
+    display: flex;
+    gap: 4em;
+    align-items: center;
+}
+
+.hamburger{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 5rem;
+    height: 100%
+}
+
+.navLink{
+
+     text-decoration: none;
+     color: white;
+     font-family: Tahoma, sans-serif;
+}
+
+.hamburgerLine{
+    height: 5%;
+    width: 100%;
+    background: white;
+}

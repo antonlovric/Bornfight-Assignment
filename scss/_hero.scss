@@ -1,0 +1,59 @@
+.hero{
+    height: 105vmin;
+    // background: yellow;
+    color: white;
+}
+.heroTextContainer{
+    display: grid;
+    grid-template-columns: 60rem 40rem;
+    grid-template-rows: 20rem 30rem;
+    margin: auto;
+}
+
+.gridContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10em;
+}
+
+.titleContainer{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    // background: red;
+    h1{
+        position: absolute;
+        bottom: 0;
+        font-size: 9rem;
+    }
+    .rightTitle{
+        bottom: -2em;
+        text-align: right;
+        left: 0;
+    }
+}
+
+.infoContainer{
+    width: 100%;
+    height: 100%;
+    // background-color: cadetblue;
+    position: relative;
+}
+
+.info{
+    position: absolute;
+    top: 5em;
+    display: flex;
+    align-items: center;
+    gap: 2.5em;
+    .date{
+        font-weight: 800;
+        font-size: 4rem;
+        text-align: justify;
+    }
+    .infoText{
+        font-size: 2.7rem;
+        width: 25rem;
+    }
+}

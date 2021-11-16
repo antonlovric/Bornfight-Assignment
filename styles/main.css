@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+
+hr, .textBetweenSections {
+  margin: auto 5rem;
+}
+
+.textBetweenSections {
+  margin-top: 0.5em;
+}
+
+.header {
+  color: white;
+  padding: 3em 3em 3em 1.5em;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background: black;
+}
+
+.headerInfoContainer {
+  display: flex;
+  gap: 0.2em;
+  align-items: center;
+}
+.headerInfoContainer .companyName {
+  margin-right: 1em;
+  font-size: 1.6rem;
+}
+
+.navContainer {
+  display: flex;
+  gap: 4em;
+  align-items: center;
+}
+
+.hamburger {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 5rem;
+  height: 100%;
+}
+
+.navLink {
+  text-decoration: none;
+  color: white;
+  font-family: Tahoma, sans-serif;
+}
+
+.hamburgerLine {
+  height: 5%;
+  width: 100%;
+  background: white;
+}
+
+.hero {
+  height: 105vmin;
+  color: white;
+}
+
+.heroTextContainer {
+  display: grid;
+  grid-template-columns: 60rem 40rem;
+  grid-template-rows: 20rem 30rem;
+  margin: auto;
+}
+
+.gridContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10em;
+}
+
+.titleContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.titleContainer h1 {
+  position: absolute;
+  bottom: 0;
+  font-size: 9rem;
+}
+.titleContainer .rightTitle {
+  bottom: -2em;
+  text-align: right;
+  left: 0;
+}
+
+.infoContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.info {
+  position: absolute;
+  top: 5em;
+  display: flex;
+  align-items: center;
+  gap: 2.5em;
+}
+.info .date {
+  font-weight: 800;
+  font-size: 4rem;
+  text-align: justify;
+}
+.info .infoText {
+  font-size: 2.7rem;
+  width: 25rem;
+}
+
+.intro {
+  margin-top: 5em;
+}
+
+.introText {
+  margin-left: 5rem;
+  font-size: 4rem;
+  min-width: 60%;
+  max-width: 80%;
+}
+
+.carouselContainer {
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  height: 20rem;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  margin-bottom: 15rem;
+}
+
+.swiper {
+  height: 100%;
+}
+
+.carouselItem {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border: 1px solid black;
+  transition: 0.5s ease-in-out;
+}
+.carouselItem .visibleText {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 1em;
+  padding-left: 1em;
+}
+.carouselItem .visibleText .categoryAbbr {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.carouselItem .visibleText .categoryTitle {
+  font-size: 3rem;
+}
+.carouselItem .hiddenTextContainer {
+  height: 30%;
+  max-width: 100%;
+  background: #191919;
+}
+.carouselItem .hiddenText {
+  padding-left: 1em;
+  padding-left: 1em;
+}
+
+.showCategory {
+  transform: translateY(-25%);
+  background: #191919;
+}
+
+.hideCategory {
+  transform: translateY(0%);
+  background: black;
+}
+
+.highlights {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.highlightHeading {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.highlightsContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 30rem;
+  margin-top: 5rem;
+}
+
+.speakerInfoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.highlightSwiper-slide {
+  position: relative;
+  max-width: fit-content;
+  max-width: -moz-fit-content;
+}
+
+.speakersContainer {
+  flex-grow: 1;
+}
+
+.navButtonContainer img {
+  cursor: pointer;
+}
+
+.speakerOverlay {
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #7dcfec;
+  opacity: 0.4;
+}
+
+figure {
+  position: relative;
+}
+figure img {
+  height: 35rem;
+}
+
+/*# sourceMappingURL=main.css.map */
