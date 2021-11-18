@@ -61,6 +61,7 @@
 
 .date {
   font-size: clamp(2rem, 4rem, 6rem);
+  flex-shrink: 0;
 }
 
 .infoText {
@@ -73,13 +74,14 @@
   height: 100%;
   width: 100%;
   display: none;
-  grid-template-columns: repeat(4, 20%);
-  grid-template-rows: repeat(4, 10%);
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: repeat(5, 10%);
   grid-template-areas:
-    ". upperGlass . ."
-    ". . . midGlass"
-    ". . . ."
-    "lowerLeftGlass . . lowerRightGlass";
+    ". upperGlass . . ."
+    ". . .  .midGlass"
+    ". . . . ."
+    ". . . . ."
+    "lowerLeftGlass . . . lowerRightGlass";
 }
 
 .upperGlass,
@@ -126,12 +128,18 @@
   z-index: 2;
 }
 
+@media (max-width: 120em) {
+  .infoText {
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 30em) {
   .mobileGlassGrid {
     display: grid;
   }
   .hero {
-    height: 95vh;
+    height: 100vh;
   }
   .leftTitleText,
   .rightTitleText {
