@@ -5,6 +5,10 @@
   height: clamp(100vh, 120vh, 150vh);
 }
 
+.mobileBuyTicket {
+  display: none;
+}
+
 .header {
   width: 100%;
 }
@@ -63,6 +67,45 @@
   font-size: clamp(1.5rem, 3.5rem, 5rem);
 }
 
+.mobileGlassGrid {
+  position: absolute;
+  top: 10%;
+  height: 100%;
+  width: 100%;
+  display: none;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: repeat(4, 10%);
+  grid-template-areas:
+    ". upperGlass . ."
+    ". . . midGlass"
+    ". . . ."
+    "lowerLeftGlass . . lowerRightGlass";
+}
+
+.upperGlass,
+.midGlass,
+.lowerLeftGlass,
+.lowerRightGlass {
+  position: relative;
+  z-index: 4;
+}
+
+.upperGlass {
+  grid-area: upperGlass;
+}
+.midGlass {
+  grid-area: midGlass;
+}
+.lowerLeftGlass {
+  grid-area: lowerLeftGlass;
+  position: relative;
+  z-index: 2;
+  transform: translateY(50%);
+}
+.lowerRightGlass {
+  grid-area: lowerRightGlass;
+}
+
 .glassContainer {
   position: absolute;
   height: 100%;
@@ -84,10 +127,34 @@
 }
 
 @media (max-width: 30em) {
+  .mobileGlassGrid {
+    display: grid;
+  }
+  .hero {
+    height: 95vh;
+  }
+  .leftTitleText,
+  .rightTitleText {
+    width: 90%;
+  }
+  .buyTicketContainer {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+  .mobileBuyTicket {
+    display: block;
+    position: relative;
+    z-index: 3;
+  }
+  .glassContainer {
+    display: none;
+  }
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
   .grid {
     display: flex;
@@ -115,6 +182,7 @@
   }
   .date {
     font-size: 2rem;
+    flex-shrink: 0;
   }
   .infoText {
     font-size: 1rem;

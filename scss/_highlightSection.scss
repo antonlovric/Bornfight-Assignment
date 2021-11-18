@@ -105,3 +105,46 @@ figure {
 figure > img {
   max-width: 320px;
 }
+
+@media (max-width: 30em) {
+  .highlightHeading {
+    flex-direction: column;
+  }
+  .highlights {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 5rem;
+  }
+  figure > img {
+    max-width: 240px;
+  }
+  .highlightsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .navButtonContainer {
+    display: none;
+  }
+  .speakerInfoContainer {
+    width: 90%;
+    text-align: left;
+  }
+  .speakerInfo {
+    text-align: left;
+    width: 100%;
+    font-size: 2rem;
+
+    span {
+      font-size: 3.5rem;
+    }
+  }
+  .slide {
+    padding: 0.2em;
+  }
+  .swiperContainer {
+    width: 100%;
+  }
+}

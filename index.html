@@ -20,12 +20,35 @@
       src="https://unpkg.com/swiper@7/swiper-bundle.min.js"
       defer
     ></script>
+    <script
+      type="text/javascript"
+      src="./scripts/vanilla-tilt.min.js"
+      defer
+    ></script>
     <script src="./scripts/script.js" defer></script>
 
     <title>IT Conference</title>
   </head>
   <body>
     <section class="hero">
+      <div class="mobileGlassGrid">
+        <img
+          src="./images/upperGlass.svg"
+          alt=""
+          class="mobileGlass upperGlass"
+        />
+        <img src="./images/midGlass.svg" alt="" class="mobileGlass midGlass" />
+        <img
+          src="./images/lowerLeftGlass.svg"
+          alt=""
+          class="mobileGlass lowerLeftGlass"
+        />
+        <img
+          src="./images/lowerRightGlass.svg"
+          alt=""
+          class="mobileGlass lowerRightGlass"
+        />
+      </div>
       <div class="glassContainer">
         <img src="./images/glassLeftSide.png" alt="" class="glass glassLeft" />
         <img
@@ -66,6 +89,11 @@
           </div>
           <div class="rightTitle">
             <h1 class="rightTitleText">looking glass</h1>
+          </div>
+          <div class="buyTicketContainer">
+            <a href="#" class="mobileBuyTicket buyTicketLink"
+              ><img src="./images/buyTicketsButton.png" alt=""
+            /></a>
           </div>
           <div class="info">
             <div class="infoContainer">
@@ -204,7 +232,7 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide slide" data-tilt>
+              <div class="swiper-slide slide">
                 <figure>
                   <img src="./images/merlin.png" alt="" class="speakerImage" />
                   <div class="speakerOverlay"></div>
@@ -213,7 +241,7 @@
                 <p class="speakerRole">UX Design at <strong>Google</strong></p>
               </div>
 
-              <div class="swiper-slide slide" data-tilt>
+              <div class="swiper-slide slide">
                 <figure>
                   <img
                     src="./images/magdalena.png"
@@ -228,7 +256,7 @@
                 </p>
               </div>
 
-              <div class="swiper-slide slide" data-tilt>
+              <div class="swiper-slide slide">
                 <figure>
                   <img src="./images/kene.png" alt="" class="speakerImage" />
                   <div class="speakerOverlay"></div>
@@ -239,7 +267,7 @@
                 </p>
               </div>
 
-              <div class="swiper-slide slide" data-tilt>
+              <div class="swiper-slide slide">
                 <figure>
                   <img src="./images/merlin.png" alt="" class="speakerImage" />
                   <div class="speakerOverlay"></div>
@@ -248,7 +276,7 @@
                 <p class="speakerRole">UX Design at <strong>Google</strong></p>
               </div>
 
-              <div class="swiper-slide slide" data-tilt>
+              <div class="swiper-slide slide">
                 <figure>
                   <img
                     src="./images/magdalena.png"
@@ -263,7 +291,7 @@
                 </p>
               </div>
 
-              <div class="swiper-slide slide" data-tilt>
+              <div class="swiper-slide slide">
                 <figure>
                   <img src="./images/kene.png" alt="" class="speakerImage" />
                   <div class="speakerOverlay"></div>
@@ -278,7 +306,5 @@
         </div>
       </div>
     </section>
-
-    <script type="text/javascript" src="./scripts/vanilla-tilt.min.js"></script>
   </body>
 </html>

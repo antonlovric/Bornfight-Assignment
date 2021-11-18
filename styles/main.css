@@ -96,7 +96,7 @@ hr {
   }
 
   .companyName,
-.headerInfoContainer {
+.headerInfo {
     display: none;
   }
 
@@ -118,6 +118,10 @@ hr {
   flex-direction: column;
   align-items: center;
   height: 120vh;
+}
+
+.mobileBuyTicket {
+  display: none;
 }
 
 .header {
@@ -176,6 +180,44 @@ hr {
   font-size: 3.5rem;
 }
 
+.mobileGlassGrid {
+  position: absolute;
+  top: 10%;
+  height: 100%;
+  width: 100%;
+  display: none;
+  grid-template-columns: repeat(4, 20%);
+  grid-template-rows: repeat(4, 10%);
+  grid-template-areas: ". upperGlass . ." ". . . midGlass" ". . . ." "lowerLeftGlass . . lowerRightGlass";
+}
+
+.upperGlass,
+.midGlass,
+.lowerLeftGlass,
+.lowerRightGlass {
+  position: relative;
+  z-index: 4;
+}
+
+.upperGlass {
+  grid-area: upperGlass;
+}
+
+.midGlass {
+  grid-area: midGlass;
+}
+
+.lowerLeftGlass {
+  grid-area: lowerLeftGlass;
+  position: relative;
+  z-index: 2;
+  transform: translateY(50%);
+}
+
+.lowerRightGlass {
+  grid-area: lowerRightGlass;
+}
+
 .glassContainer {
   position: absolute;
   height: 100%;
@@ -197,10 +239,40 @@ hr {
 }
 
 @media (max-width: 30em) {
+  .mobileGlassGrid {
+    display: grid;
+  }
+
+  .hero {
+    height: 95vh;
+  }
+
+  .leftTitleText,
+.rightTitleText {
+    width: 90%;
+  }
+
+  .buyTicketContainer {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .mobileBuyTicket {
+    display: block;
+    position: relative;
+    z-index: 3;
+  }
+
+  .glassContainer {
+    display: none;
+  }
+
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
   }
 
   .grid {
@@ -230,6 +302,7 @@ hr {
 
   .date {
     font-size: 2rem;
+    flex-shrink: 0;
   }
 
   .infoText {
@@ -273,7 +346,7 @@ hr {
   width: 100%;
   height: 100%;
   position: relative;
-  border: 1px solid black;
+  border: 1px solid #191919;
   transition: 0.5s ease-in-out;
 }
 .carouselItem .visibleText {
@@ -325,6 +398,10 @@ hr {
     font-size: 1.3rem;
     margin: auto;
     font-weight: 500;
+  }
+
+  .carouselContainer {
+    padding-left: 2rem;
   }
 
   .carouselItem .visibleText {
@@ -456,6 +533,56 @@ figure {
 
 figure > img {
   max-width: 320px;
+}
+
+@media (max-width: 30em) {
+  .highlightHeading {
+    flex-direction: column;
+  }
+
+  .highlights {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 5rem;
+  }
+
+  figure > img {
+    max-width: 240px;
+  }
+
+  .highlightsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .navButtonContainer {
+    display: none;
+  }
+
+  .speakerInfoContainer {
+    width: 90%;
+    text-align: left;
+  }
+
+  .speakerInfo {
+    text-align: left;
+    width: 100%;
+    font-size: 2rem;
+  }
+  .speakerInfo span {
+    font-size: 3.5rem;
+  }
+
+  .slide {
+    padding: 0.2em;
+  }
+
+  .swiperContainer {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
