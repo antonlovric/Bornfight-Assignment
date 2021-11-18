@@ -26,8 +26,8 @@
   grid-template-columns: 1.5fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
-    "leftTitle glass"
-    "info rightTitle";
+    'leftTitle glass'
+    'info rightTitle';
   gap: 2rem;
 }
 
@@ -57,6 +57,7 @@
   display: flex;
   align-items: center;
   gap: 3rem;
+  font-family: 'Neue Haas';
 }
 
 .date {
@@ -66,6 +67,8 @@
 
 .infoText {
   font-size: clamp(1.5rem, 3.5rem, 5rem);
+  max-width: 20rem;
+  font-weight: 200;
 }
 
 .mobileGlassGrid {
@@ -77,11 +80,11 @@
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: repeat(5, 10%);
   grid-template-areas:
-    ". upperGlass . . ."
-    ". . .  .midGlass"
-    ". . . . ."
-    ". . . . ."
-    "lowerLeftGlass . . . lowerRightGlass";
+    '. upperGlass . . .'
+    '. . .  .midGlass'
+    '. . . . .'
+    '. . . . .'
+    'lowerLeftGlass . . . lowerRightGlass';
 }
 
 .upperGlass,

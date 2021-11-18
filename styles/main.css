@@ -4,10 +4,19 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Everett Regular";
+  src: url(../fonts/Everett-Regular.woff) format("woff"), url(../fonts/Everett-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Neue Haas";
+  src: url(../fonts/Neue-Haas-Grotesk-Display-Pro-Regular.woff) format("woff"), url(../fonts/Neue-Haas-Grotesk-Display-Pro-Regular.woff2) format("woff2");
+}
 body {
   background: black;
   color: white;
-  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 hr,
@@ -45,6 +54,7 @@ hr {
   justify-content: space-between;
   position: relative;
   background: transparent;
+  font-family: "Neue Haas";
 }
 
 .headerInfoContainer {
@@ -75,7 +85,7 @@ hr {
 .navLink {
   text-decoration: none;
   color: white;
-  font-family: Tahoma, sans-serif;
+  font-family: "Neue Haas";
 }
 
 .hamburgerLine {
@@ -170,6 +180,7 @@ hr {
   display: flex;
   align-items: center;
   gap: 3rem;
+  font-family: "Neue Haas";
 }
 
 .date {
@@ -179,6 +190,8 @@ hr {
 
 .infoText {
   font-size: 3.5rem;
+  max-width: 20rem;
+  font-weight: 200;
 }
 
 .mobileGlassGrid {
@@ -353,6 +366,7 @@ hr {
   height: 100%;
   position: relative;
   border: 1px solid #191919;
+  font-family: "Neue Haas";
   transition: 0.5s ease-in-out;
 }
 .carouselItem .visibleText {
@@ -475,9 +489,11 @@ hr {
   flex-shrink: 0;
   background-color: black;
   align-items: center;
+  font-family: "Neue Haas";
 }
 
 .speakerInfo {
+  font-family: "Everett Regular";
   font-size: 3rem;
   text-align: center;
 }
@@ -520,6 +536,17 @@ hr {
   margin-left: 2em;
 }
 
+.speakerName,
+.speakerRole {
+  font-family: "Tahoma";
+  margin-top: 0.5rem;
+}
+
+.speakerDescriptionContainer {
+  width: 250px;
+  text-align: left;
+}
+
 .speakerOverlay {
   position: absolute;
   bottom: 0;
@@ -558,7 +585,11 @@ figure > img {
   }
 
   figure > img {
-    max-width: 240px;
+    max-width: 220px;
+  }
+
+  .speakerDescriptionContainer {
+    width: 220px;
   }
 
   .highlightsContainer {

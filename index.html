@@ -4,17 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="./styles/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap"
-      rel="stylesheet"
-    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
 
     <script
       src="https://unpkg.com/swiper@7/swiper-bundle.min.js"
@@ -33,25 +31,39 @@
     <section class="hero">
       <div class="mobileGlassGrid">
         <img
+          data-aos="fade-down"
           src="./images/upperGlass.svg"
           alt=""
           class="mobileGlass upperGlass"
         />
-        <img src="./images/midGlass.svg" alt="" class="mobileGlass midGlass" />
         <img
+          data-aos="fade-left"
+          src="./images/midGlass.svg"
+          alt=""
+          class="mobileGlass midGlass"
+        />
+        <img
+          data-aos="fade-right"
           src="./images/lowerLeftGlass.svg"
           alt=""
           class="mobileGlass lowerLeftGlass"
         />
         <img
+          data-aos="fade-left"
           src="./images/lowerRightGlass.svg"
           alt=""
           class="mobileGlass lowerRightGlass"
         />
       </div>
       <div class="glassContainer">
-        <img src="./images/glassLeftSide.png" alt="" class="glass glassLeft" />
         <img
+          data-aos="fade-right"
+          src="./images/glassLeftSide.png"
+          alt=""
+          class="glass glassLeft"
+        />
+        <img
+          data-aos="fade-left"
           src="./images/glassRightSide.png"
           alt=""
           class="glass glassRight"
@@ -80,23 +92,28 @@
       <div class="container">
         <div class="grid">
           <img
+            data-aos="fade-left"
             src="./images/glassAboveTitle.png"
             alt=""
             class="glass glassAboveTitle"
           />
-          <div class="leftTitle">
+          <div class="leftTitle" data-aos="fade-right">
             <h1 class="leftTitleText">Beyond the digital</h1>
           </div>
-          <div class="rightTitle">
+          <div class="rightTitle" data-aos="fade-left" data-aos-delay="300">
             <h1 class="rightTitleText">looking glass</h1>
           </div>
-          <div class="buyTicketContainer">
+          <div class="buyTicketContainer" data-aos="fade-right">
             <a href="#" class="mobileBuyTicket buyTicketLink"
               ><img src="./images/buyTicketsButton.png" alt=""
             /></a>
           </div>
           <div class="info">
-            <div class="infoContainer">
+            <div
+              class="infoContainer"
+              data-aos="fade-right"
+              data-aos-delay="500"
+            >
               <p class="date">
                 03-05 <br />
                 Nov '21
@@ -110,10 +127,12 @@
       </div>
     </section>
 
-    <hr />
-    <h2 class="textBetweenSections">About the conference</h2>
+    <hr data-aos="fade-down" />
+    <h2 data-aos="fade-down" class="textBetweenSections">
+      About the conference
+    </h2>
 
-    <section class="intro">
+    <section data-aos="fade-up" data-aos-delay="500" class="intro">
       <p class="introText">
         Shape is a 3 day ICT conference bringing you top of the line keynote
         speakers in both design and development. Additionally, we are happy to
@@ -195,7 +214,7 @@
       </div>
     </section>
 
-    <section class="highlights">
+    <section class="highlights" data-aos="fade-up">
       <div class="highlightHeading">
         <h2 class="highlightTitle">Conference Highlights</h2>
         <div class="scheduleContainer">
@@ -237,8 +256,12 @@
                   <img src="./images/merlin.png" alt="" class="speakerImage" />
                   <div class="speakerOverlay"></div>
                 </figure>
-                <h3 class="speakerName">Merlin Rebrović</h3>
-                <p class="speakerRole">UX Design at <strong>Google</strong></p>
+                <div class="speakerDescriptionContainer">
+                  <h3 class="speakerName">Merlin Rebrović</h3>
+                  <p class="speakerRole">
+                    UX Design at <strong>Google</strong>
+                  </p>
+                </div>
               </div>
 
               <div class="swiper-slide slide">
@@ -250,10 +273,12 @@
                   />
                   <div class="speakerOverlay"></div>
                 </figure>
-                <h3 class="speakerName">Magdalena Magličić</h3>
-                <p class="speakerRole">
-                  Web and mobile developer at <strong>FIVE</strong>
-                </p>
+                <div class="speakerDescriptionContainer">
+                  <h3 class="speakerName">Magdalena Magličić</h3>
+                  <p class="speakerRole">
+                    Web and mobile developer at <strong>FIVE</strong>
+                  </p>
+                </div>
               </div>
 
               <div class="swiper-slide slide">
@@ -261,10 +286,12 @@
                   <img src="./images/kene.png" alt="" class="speakerImage" />
                   <div class="speakerOverlay"></div>
                 </figure>
-                <h3 class="speakerName">Kene Udeze</h3>
-                <p class="speakerRole">
-                  UX Designer at <strong>Booking.com</strong>
-                </p>
+                <div class="speakerDescriptionContainer">
+                  <h3 class="speakerName">Kene Udeze</h3>
+                  <p class="speakerRole">
+                    UX Designer at <strong>Booking.com</strong>
+                  </p>
+                </div>
               </div>
 
               <div class="swiper-slide slide">
@@ -272,8 +299,12 @@
                   <img src="./images/merlin.png" alt="" class="speakerImage" />
                   <div class="speakerOverlay"></div>
                 </figure>
-                <h3 class="speakerName">Merlin Rebrović</h3>
-                <p class="speakerRole">UX Design at <strong>Google</strong></p>
+                <div class="speakerDescriptionContainer">
+                  <h3 class="speakerName">Merlin Rebrović</h3>
+                  <p class="speakerRole">
+                    UX Design at <strong>Google</strong>
+                  </p>
+                </div>
               </div>
 
               <div class="swiper-slide slide">
@@ -285,10 +316,12 @@
                   />
                   <div class="speakerOverlay"></div>
                 </figure>
-                <h3 class="speakerName">Magdalena Magličić</h3>
-                <p class="speakerRole">
-                  Web and mobile developer at <strong>FIVE</strong>
-                </p>
+                <div class="speakerDescriptionContainer">
+                  <h3 class="speakerName">Magdalena Magličić</h3>
+                  <p class="speakerRole">
+                    Web and mobile developer at <strong>FIVE</strong>
+                  </p>
+                </div>
               </div>
 
               <div class="swiper-slide slide">
@@ -296,10 +329,12 @@
                   <img src="./images/kene.png" alt="" class="speakerImage" />
                   <div class="speakerOverlay"></div>
                 </figure>
-                <h3 class="speakerName">Kene Udeze</h3>
-                <p class="speakerRole">
-                  UX Designer at <strong>Booking.com</strong>
-                </p>
+                <div class="speakerDescriptionContainer">
+                  <h3 class="speakerName">Kene Udeze</h3>
+                  <p class="speakerRole">
+                    UX Designer at <strong>Booking.com</strong>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
