@@ -26,6 +26,14 @@
   </head>
   <body>
     <section class="hero">
+      <div class="glassContainer">
+        <img src="./images/glassLeftSide.png" alt="" class="glass glassLeft" />
+        <img
+          src="./images/glassRightSide.png"
+          alt=""
+          class="glass glassRight"
+        />
+      </div>
       <header class="header">
         <div class="headerInfoContainer">
           <img src="images/logo.png" alt="Logo" class="logo" />
@@ -40,20 +48,27 @@
             <div class="hamburgerLine"></div>
           </div>
           <!-- <img src="./images/hamburger.png" alt="Hamburger" class="hamburger"> -->
-          <a href="#" class="navLink buyTicketLink">Buy Tickets</a>
+          <a href="#" class="navLink buyTicketLink"
+            ><img src="./images/buyTicketsButton.png" alt=""
+          /></a>
         </nav>
       </header>
 
-      <div class="gridContainer">
-        <div class="heroTextContainer">
-          <div class="titleContainer">
-            <h1 class="title leftTitle">Beyond the digital</h1>
+      <div class="container">
+        <div class="grid">
+          <img
+            src="./images/glassAboveTitle.png"
+            alt=""
+            class="glass glassAboveTitle"
+          />
+          <div class="leftTitle">
+            <h1 class="leftTitleText">Beyond the digital</h1>
           </div>
-          <div class="titleContainer">
-            <h1 class="title rightTitle">looking glass</h1>
+          <div class="rightTitle">
+            <h1 class="rightTitleText">looking glass</h1>
           </div>
-          <div class="infoContainer">
-            <div class="info">
+          <div class="info">
+            <div class="infoContainer">
               <p class="date">
                 03-05 <br />
                 Nov '21
@@ -69,6 +84,7 @@
 
     <hr />
     <h2 class="textBetweenSections">About the conference</h2>
+
     <section class="intro">
       <p class="introText">
         Shape is a 3 day ICT conference bringing you top of the line keynote
@@ -91,7 +107,7 @@
                     Design
                   </p>
                 </div>
-                <div class="hiddenTextContainer">
+                <div class="hiddenTextContainer hideHiddenText">
                   <p class="hiddenText">
                     Find out the latest trends and buzz for experience research
                   </p>
@@ -107,7 +123,7 @@
                     Experience
                   </p>
                 </div>
-                <div class="hiddenTextContainer">
+                <div class="hiddenTextContainer hideHiddenText">
                   <p class="hiddenText">
                     Find out the latest trends and buzz for experience research
                   </p>
@@ -123,7 +139,7 @@
                     Development
                   </p>
                 </div>
-                <div class="hiddenTextContainer">
+                <div class="hiddenTextContainer hideHiddenText">
                   <p class="hiddenText">
                     Find out the latest trends and buzz for experience research
                   </p>
@@ -139,7 +155,7 @@
                     Development
                   </p>
                 </div>
-                <div class="hiddenTextContainer">
+                <div class="hiddenTextContainer hideHiddenText">
                   <p class="hiddenText">
                     Find out the latest trends and buzz for experience research
                   </p>
@@ -150,18 +166,23 @@
         </div>
       </div>
     </section>
+
     <section class="highlights">
       <div class="highlightHeading">
         <h2 class="highlightTitle">Conference Highlights</h2>
         <div class="scheduleContainer">
           <p class="scheduleText">View schedule</p>
+          <img
+            src="./images/magneticButton.png"
+            alt=""
+            class="magneticButton"
+          />
         </div>
       </div>
-
       <div class="highlightsContainer">
         <div class="speakerInfoContainer">
           <p class="speakerInfo">
-            22 <br />
+            <span class="numberOfSpeakers">22 </span> <br />
             Speakers
           </p>
           <div class="navButtonContainer">
@@ -177,49 +198,87 @@
             />
           </div>
         </div>
-        <div class="speakersContainer">
-          <!-- Slider main container -->
+
+        <div class="swiperContainer">
           <div class="highlightSwiper">
             <!-- Additional required wrapper -->
-            <div class="highlightSwiper-wrapper">
+            <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="highlightSwiper-slide">
-                <div class="highlightSpeakerContainer">
-                  <figure>
-                    <img src="./images/merlin.png" alt="" class="speakerImage">
-                    <div class="speakerOverlay"></div>
-                  </figure>
-                  <h3 class="speakerName">Merlin Rebrović</h3>
-                  <p class="speakerRole">UX Design at <strong>Google</strong></p>
-                </div>
+              <div class="swiper-slide slide" data-tilt>
+                <figure>
+                  <img src="./images/merlin.png" alt="" class="speakerImage" />
+                  <div class="speakerOverlay"></div>
+                </figure>
+                <h3 class="speakerName">Merlin Rebrović</h3>
+                <p class="speakerRole">UX Design at <strong>Google</strong></p>
               </div>
 
-              <div class="highlightSwiper-slide">
-                <div class="highlightSpeakerContainer">
-                  <figure>
-                    <img src="./images/magdalena.png" alt="" class="speakerImage">
-                    <div class="speakerOverlay"></div>
-                  </figure>
-                  <h3 class="speakerName">Magdalena Magličić</h3>
-                  <p class="speakerRole">Web and mobile developer at <strong>FIVE</strong></p>
-                </div>
+              <div class="swiper-slide slide" data-tilt>
+                <figure>
+                  <img
+                    src="./images/magdalena.png"
+                    alt=""
+                    class="speakerImage"
+                  />
+                  <div class="speakerOverlay"></div>
+                </figure>
+                <h3 class="speakerName">Magdalena Magličić</h3>
+                <p class="speakerRole">
+                  Web and mobile developer at <strong>FIVE</strong>
+                </p>
               </div>
 
-              <div class="highlightSwiper-slide">
-                <div class="highlightSpeakerContainer">
-                  <figure>
-                    <img src="./images/kene.png" alt="" class="speakerImage">
-                    <div class="speakerOverlay"></div>
-                  </figure>
-                  <h3 class="speakerName">Kene Udeze</h3>
-                  <p class="speakerRole">UX Designer at <strong>Booking.com</strong></p>
-                </div>
+              <div class="swiper-slide slide" data-tilt>
+                <figure>
+                  <img src="./images/kene.png" alt="" class="speakerImage" />
+                  <div class="speakerOverlay"></div>
+                </figure>
+                <h3 class="speakerName">Kene Udeze</h3>
+                <p class="speakerRole">
+                  UX Designer at <strong>Booking.com</strong>
+                </p>
               </div>
 
+              <div class="swiper-slide slide" data-tilt>
+                <figure>
+                  <img src="./images/merlin.png" alt="" class="speakerImage" />
+                  <div class="speakerOverlay"></div>
+                </figure>
+                <h3 class="speakerName">Merlin Rebrović</h3>
+                <p class="speakerRole">UX Design at <strong>Google</strong></p>
+              </div>
+
+              <div class="swiper-slide slide" data-tilt>
+                <figure>
+                  <img
+                    src="./images/magdalena.png"
+                    alt=""
+                    class="speakerImage"
+                  />
+                  <div class="speakerOverlay"></div>
+                </figure>
+                <h3 class="speakerName">Magdalena Magličić</h3>
+                <p class="speakerRole">
+                  Web and mobile developer at <strong>FIVE</strong>
+                </p>
+              </div>
+
+              <div class="swiper-slide slide" data-tilt>
+                <figure>
+                  <img src="./images/kene.png" alt="" class="speakerImage" />
+                  <div class="speakerOverlay"></div>
+                </figure>
+                <h3 class="speakerName">Kene Udeze</h3>
+                <p class="speakerRole">
+                  UX Designer at <strong>Booking.com</strong>
+                </p>
+              </div>
             </div>
-         </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <script type="text/javascript" src="./scripts/vanilla-tilt.min.js"></script>
   </body>
 </html>

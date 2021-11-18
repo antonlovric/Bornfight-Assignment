@@ -1,48 +1,73 @@
-.header{
-    color: white;
-    padding: 3em 3em 3em 1.5em;
-
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    background: black;
+.header {
+  color: white;
+  padding: 3em 3em 3em 1.5em;
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  background: transparent;
 }
 
-.headerInfoContainer{
-    display: flex;
-    gap: 0.2em;
-    align-items: center;
+.headerInfoContainer {
+  display: flex;
+  gap: 0.2em;
+  align-items: center;
 
-    .companyName{
-        margin-right: 1em;
-        font-size: 1.6rem;
-    }
+  .companyName {
+    margin-right: 1em;
+    font-size: 1.6rem;
+  }
 }
 
-.navContainer{
-    display: flex;
-    gap: 4em;
-    align-items: center;
+.navContainer {
+  display: flex;
+  gap: 4em;
+  align-items: center;
 }
 
-.hamburger{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 5rem;
-    height: 100%
+.hamburger {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 5rem;
+  height: 100%;
 }
 
-.navLink{
-
-     text-decoration: none;
-     color: white;
-     font-family: Tahoma, sans-serif;
+.navLink {
+  text-decoration: none;
+  color: white;
+  font-family: Tahoma, sans-serif;
 }
 
-.hamburgerLine{
-    height: 5%;
+.hamburgerLine {
+  height: 5%;
+  width: 100%;
+  background: white;
+}
+
+@media (max-width: 30em) {
+  .buyTicketLink {
+    display: none;
+  }
+  .navContainer {
+    gap: 1em;
+    justify-content: flex-end;
     width: 100%;
-    background: white;
+  }
+  .companyName,
+  .headerInfoContainer {
+    display: none;
+  }
+  .navLink {
+    font-size: 1rem;
+  }
+  .headerInfo {
+    font-size: 1rem;
+  }
+  .hamburger {
+    width: 2rem;
+    height: 100%;
+  }
 }

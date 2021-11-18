@@ -1,6 +1,6 @@
 var swiper = new Swiper(".swiper", {
   breakpoints:{
-    400:{
+    300:{
       allowTouchMove: true,
       slidesPerView: 1.2,
       spaceBetween: 10,
@@ -32,19 +32,20 @@ var swiper = new Swiper(".swiper", {
     allowSwipeToNext: false, allowSwipeToPrev: false, allowTouchMove: false
   });
 
+
+
   var highlightSwiper = new Swiper(".highlightSwiper", {
-    containerModifierClass: "highlightSwiper-",
-    slideClass: "highlightSwiper-slide",
-    wrapperClass: "highlightSwiper-wrapper",
-    // loop: true,
     navigation: {
       nextEl: ".navButtonRight",
       prevEl: ".navButtonLeft",
     },
-  })
+    loop:true,
+    slidesPerView: 3,
+      spaceBetween: 10,
 
+    })
   console.log(highlightSwiper.slides);
-  console.log(swiper.slides);
+
 
 
 
@@ -68,9 +69,19 @@ items.forEach((item) => {
   item.addEventListener("mouseleave", function(){
     toggleCategory(item)
   });
+  if (window.innerWidth < 500){
+    item.addEventListener("click", function(){
+      toggleCategory(item)
+    });
+  }
+
 })
 
 function toggleCategory(item){
   item.classList.toggle("showCategory")
   item.classList.toggle("hideCategory")
+  const hiddenTextContainer = item.querySelector(".hiddenTextContainer");
+  hiddenTextContainer.classList.toggle("showHiddenText")
+  hiddenTextContainer.classList.toggle("hideHiddenText")
+
 }

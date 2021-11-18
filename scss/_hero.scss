@@ -1,59 +1,128 @@
-.hero{
-    height: 105vmin;
-    // background: yellow;
-    color: white;
-}
-.heroTextContainer{
-    display: grid;
-    grid-template-columns: 60rem 40rem;
-    grid-template-rows: 20rem 30rem;
-    margin: auto;
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: clamp(100vh, 120vh, 150vh);
 }
 
-.gridContainer{
+.header {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding: 2em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "leftTitle glass"
+    "info rightTitle";
+  gap: 2rem;
+}
+
+.leftTitleText,
+.rightTitleText {
+  font-size: clamp(3rem, 7rem, 10rem);
+}
+
+.leftTitle {
+  grid-area: leftTitle;
+}
+
+.rightTitle {
+  grid-area: rightTitle;
+  position: relative;
+  top: -6rem;
+  z-index: 1;
+  text-align: right;
+  transform: translateX(-30%);
+}
+
+.info {
+  grid-area: info;
+}
+
+.infoContainer {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.date {
+  font-size: clamp(2rem, 4rem, 6rem);
+}
+
+.infoText {
+  font-size: clamp(1.5rem, 3.5rem, 5rem);
+}
+
+.glassContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background-color: yellow; */
+  /* opacity: 0.1; */
+  z-index: 1;
+}
+
+.glassRight {
+  position: absolute;
+  right: 0;
+}
+
+.glassAboveTitle {
+  grid-area: glass;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 30em) {
+  .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10em;
-}
-
-.titleContainer{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    // background: red;
-    h1{
-        position: absolute;
-        bottom: 0;
-        font-size: 9rem;
-    }
-    .rightTitle{
-        bottom: -2em;
-        text-align: right;
-        left: 0;
-    }
-}
-
-.infoContainer{
-    width: 100%;
-    height: 100%;
-    // background-color: cadetblue;
-    position: relative;
-}
-
-.info{
-    position: absolute;
-    top: 5em;
+  }
+  .grid {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 2.5em;
-    .date{
-        font-weight: 800;
-        font-size: 4rem;
-        text-align: justify;
-    }
-    .infoText{
-        font-size: 2.7rem;
-        width: 25rem;
-    }
+  }
+  .rightTitle {
+    top: 0;
+    transform: none;
+  }
+  .leftTitleText,
+  .rightTitleText {
+    font-size: 3rem;
+    position: relative;
+    z-index: 3;
+  }
+  .leftTitle,
+  .rightTitle {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTitleText {
+    // text-align: center;
+  }
+  .date {
+    font-size: 2rem;
+  }
+  .infoText {
+    font-size: 1rem;
+  }
+
+  .glassLeft,
+  .glassRight,
+  .glassAboveTitle {
+    display: none;
+  }
 }

@@ -10,21 +10,41 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-hr, .textBetweenSections {
+hr,
+.textBetweenSections {
   margin: auto 5rem;
 }
 
-.textBetweenSections {
-  margin-top: 0.5em;
+hr {
+  height: 0.5em;
+  background: white;
 }
 
+.textBetweenSections {
+  font-size: 2rem;
+  margin-bottom: 7rem;
+}
+
+@media (max-width: 30em) {
+  hr,
+.textBetweenSections {
+    margin: auto 1rem;
+  }
+
+  .textBetweenSections {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+}
 .header {
   color: white;
   padding: 3em 3em 3em 1.5em;
+  width: 100%;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   position: relative;
-  background: black;
+  background: transparent;
 }
 
 .headerInfoContainer {
@@ -64,71 +84,171 @@ hr, .textBetweenSections {
   background: white;
 }
 
+@media (max-width: 30em) {
+  .buyTicketLink {
+    display: none;
+  }
+
+  .navContainer {
+    gap: 1em;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .companyName,
+.headerInfoContainer {
+    display: none;
+  }
+
+  .navLink {
+    font-size: 1rem;
+  }
+
+  .headerInfo {
+    font-size: 1rem;
+  }
+
+  .hamburger {
+    width: 2rem;
+    height: 100%;
+  }
+}
 .hero {
-  height: 105vmin;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 120vh;
 }
 
-.heroTextContainer {
-  display: grid;
-  grid-template-columns: 60rem 40rem;
-  grid-template-rows: 20rem 30rem;
-  margin: auto;
+.header {
+  width: 100%;
 }
 
-.gridContainer {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 10em;
+  width: 80%;
+  padding: 2em;
 }
 
-.titleContainer {
+.grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "leftTitle glass" "info rightTitle";
+  gap: 2rem;
+}
+
+.leftTitleText,
+.rightTitleText {
+  font-size: 7rem;
+}
+
+.leftTitle {
+  grid-area: leftTitle;
+}
+
+.rightTitle {
+  grid-area: rightTitle;
   position: relative;
-  height: 100%;
-  width: 100%;
-}
-.titleContainer h1 {
-  position: absolute;
-  bottom: 0;
-  font-size: 9rem;
-}
-.titleContainer .rightTitle {
-  bottom: -2em;
+  top: -6rem;
+  z-index: 1;
   text-align: right;
-  left: 0;
-}
-
-.infoContainer {
-  width: 100%;
-  height: 100%;
-  position: relative;
+  transform: translateX(-30%);
 }
 
 .info {
-  position: absolute;
-  top: 5em;
-  display: flex;
-  align-items: center;
-  gap: 2.5em;
-}
-.info .date {
-  font-weight: 800;
-  font-size: 4rem;
-  text-align: justify;
-}
-.info .infoText {
-  font-size: 2.7rem;
-  width: 25rem;
+  grid-area: info;
 }
 
+.infoContainer {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.date {
+  font-size: 4rem;
+}
+
+.infoText {
+  font-size: 3.5rem;
+}
+
+.glassContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* background-color: yellow; */
+  /* opacity: 0.1; */
+  z-index: 1;
+}
+
+.glassRight {
+  position: absolute;
+  right: 0;
+}
+
+.glassAboveTitle {
+  grid-area: glass;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 30em) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rightTitle {
+    top: 0;
+    transform: none;
+  }
+
+  .leftTitleText,
+.rightTitleText {
+    font-size: 3rem;
+    position: relative;
+    z-index: 3;
+  }
+
+  .leftTitle,
+.rightTitle {
+    width: 100%;
+    text-align: left;
+  }
+
+  .date {
+    font-size: 2rem;
+  }
+
+  .infoText {
+    font-size: 1rem;
+  }
+
+  .glassLeft,
+.glassRight,
+.glassAboveTitle {
+    display: none;
+  }
+}
 .intro {
   margin-top: 5em;
 }
 
 .introText {
   margin-left: 5rem;
-  font-size: 4rem;
+  font-size: 2.7rem;
   min-width: 60%;
   max-width: 80%;
 }
@@ -174,11 +294,19 @@ hr, .textBetweenSections {
 .carouselItem .hiddenTextContainer {
   height: 30%;
   max-width: 100%;
-  background: #191919;
+  transition: 0.5s ease-in-out;
 }
 .carouselItem .hiddenText {
   padding-left: 1em;
   padding-left: 1em;
+}
+
+.showHiddenText {
+  background: #191919;
+}
+
+.hideHiddenText {
+  background: black;
 }
 
 .showCategory {
@@ -191,6 +319,39 @@ hr, .textBetweenSections {
   background: black;
 }
 
+@media (max-width: 30em) {
+  .introText {
+    max-width: 90%;
+    font-size: 1.3rem;
+    margin: auto;
+    font-weight: 500;
+  }
+
+  .carouselItem .visibleText {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 1em;
+    padding-left: 1em;
+  }
+  .carouselItem .visibleText .categoryAbbr {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .carouselItem .visibleText .categoryTitle {
+    font-size: 1.5rem;
+  }
+  .carouselItem .hiddenTextContainer {
+    height: 30%;
+    max-width: 100%;
+    transition: 0.5s ease-in-out;
+  }
+  .carouselItem .hiddenText {
+    padding-left: 1em;
+    padding-left: 1em;
+  }
+}
 .highlights {
   padding-left: 5rem;
   padding-right: 5rem;
@@ -204,47 +365,97 @@ hr, .textBetweenSections {
 }
 
 .highlightsContainer {
-  display: flex;
-  justify-content: space-between;
-  height: 30rem;
+  padding: 5rem;
+  display: grid;
+  grid-template-columns: 15% 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "info carousel";
   margin-top: 5rem;
+  gap: 8rem;
+}
+
+.swiper-slide {
+  width: max-content;
+}
+
+.swiperContainer {
+  grid-area: carousel;
+  overflow: hidden;
 }
 
 .speakerInfoContainer {
+  color: white;
+  grid-area: info;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-shrink: 0;
+  background-color: black;
+  align-items: center;
 }
 
-.highlightSwiper-slide {
-  position: relative;
-  max-width: fit-content;
-  max-width: -moz-fit-content;
+.speakerInfo {
+  font-size: 3rem;
+  text-align: center;
+}
+.speakerInfo span {
+  font-size: 6rem;
+  font-weight: bold;
 }
 
-.speakersContainer {
-  flex-grow: 1;
+.highlightTitle {
+  font-size: 3rem;
 }
 
-.navButtonContainer img {
+.scheduleContainer {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.scheduleText {
+  font-size: 2rem;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  width: -moz-fit-content;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.navButtonContainer {
   cursor: pointer;
+  z-index: 10;
+  position: relative;
+}
+.navButtonContainer img:last-child {
+  margin-left: 2em;
 }
 
 .speakerOverlay {
   position: absolute;
-  bottom: 0%;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #7dcfec;
+  background: #51a8c7;
   opacity: 0.4;
 }
 
 figure {
   position: relative;
+  width: fit-content;
+  width: -moz-fit-content;
+  height: -moz-fit-content;
 }
-figure img {
-  height: 35rem;
+
+figure > img {
+  max-width: 320px;
 }
 
 /*# sourceMappingURL=main.css.map */

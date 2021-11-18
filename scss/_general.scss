@@ -1,13 +1,29 @@
-body{
-    background: black;
-    color: white;
-    font-family: 'Rubik', sans-serif;
-
+body {
+  background: black;
+  color: white;
+  font-family: "Rubik", sans-serif;
 }
-hr, .textBetweenSections{
-    margin: auto 5rem;
+hr,
+.textBetweenSections {
+  margin: auto 5rem;
+}
+hr {
+  height: 0.5em;
+  background: white;
 }
 
-.textBetweenSections{
-    margin-top: .5em;
+.textBetweenSections {
+  font-size: 2rem;
+  margin-bottom: 7rem;
+}
+
+@media (max-width: 30em) {
+  hr,
+  .textBetweenSections {
+    margin: auto 1rem;
+  }
+  .textBetweenSections {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
 }
