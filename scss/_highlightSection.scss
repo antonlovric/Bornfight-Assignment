@@ -44,7 +44,7 @@
 .speakerInfo {
   font-family: 'Everett Regular';
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
   span {
     font-size: 6rem;
     font-weight: bold;
@@ -93,6 +93,13 @@
   margin-top: 0.5rem;
 }
 
+.speakerRole {
+  font-weight: 200;
+  strong {
+    font-weight: 500;
+  }
+}
+
 .speakerDescriptionContainer {
   width: 250px;
   text-align: left;
@@ -128,6 +135,7 @@ figure > img {
 @media (max-width: 30em) {
   .highlightHeading {
     flex-direction: column;
+    gap: 2rem;
   }
   .highlights {
     padding-left: 1rem;
@@ -155,7 +163,6 @@ figure > img {
     text-align: left;
   }
   .speakerInfo {
-    text-align: left;
     width: 100%;
     font-size: 2rem;
 

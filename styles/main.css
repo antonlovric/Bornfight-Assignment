@@ -78,8 +78,7 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 5rem;
-  height: 100%;
+  width: 1rem;
 }
 
 .navLink {
@@ -166,10 +165,10 @@ hr {
 .rightTitle {
   grid-area: rightTitle;
   position: relative;
-  top: -6rem;
+  top: -8rem;
+  left: -5rem;
   z-index: 1;
   text-align: right;
-  transform: translateX(-30%);
 }
 
 .info {
@@ -205,10 +204,7 @@ hr {
   grid-template-areas: ". upperGlass . . ." ". . .  .midGlass" ". . . . ." ". . . . ." "lowerLeftGlass . . . lowerRightGlass";
 }
 
-.upperGlass,
-.midGlass,
-.lowerLeftGlass,
-.lowerRightGlass {
+.mobileGlass {
   position: relative;
   z-index: 4;
 }
@@ -275,12 +271,12 @@ hr {
     width: 100%;
     text-align: left;
     margin-bottom: 2rem;
+    z-index: 5;
   }
 
   .mobileBuyTicket {
     display: block;
     position: relative;
-    z-index: 3;
   }
 
   .glassContainer {
@@ -422,6 +418,8 @@ hr {
 
   .carouselContainer {
     padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 5rem;
   }
 
   .carouselItem .visibleText {
@@ -495,7 +493,7 @@ hr {
 .speakerInfo {
   font-family: "Everett Regular";
   font-size: 3rem;
-  text-align: center;
+  text-align: left;
 }
 .speakerInfo span {
   font-size: 6rem;
@@ -542,6 +540,13 @@ hr {
   margin-top: 0.5rem;
 }
 
+.speakerRole {
+  font-weight: 200;
+}
+.speakerRole strong {
+  font-weight: 500;
+}
+
 .speakerDescriptionContainer {
   width: 250px;
   text-align: left;
@@ -576,6 +581,7 @@ figure > img {
 @media (max-width: 30em) {
   .highlightHeading {
     flex-direction: column;
+    gap: 2rem;
   }
 
   .highlights {
@@ -610,7 +616,6 @@ figure > img {
   }
 
   .speakerInfo {
-    text-align: left;
     width: 100%;
     font-size: 2rem;
   }

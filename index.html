@@ -4,9 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/site.webmanifest" />
 
     <link rel="stylesheet" href="./styles/main.css" />
-
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -69,7 +86,7 @@
           class="glass glassRight"
         />
       </div>
-      <header class="header">
+      <header class="header" data-aos="fade-down">
         <div class="headerInfoContainer">
           <img src="images/logo.png" alt="Logo" class="logo" />
           <h3 class="companyName">shape</h3>
@@ -82,7 +99,7 @@
             <div class="hamburgerLine"></div>
             <div class="hamburgerLine"></div>
           </div>
-          <!-- <img src="./images/hamburger.png" alt="Hamburger" class="hamburger"> -->
+          <!-- <img src="./images/hamburger.svg" alt="Hamburger" class="hamburger" /> -->
           <a href="#" class="navLink buyTicketLink"
             ><img src="./images/buyTicketsButton.png" alt=""
           /></a>
@@ -103,7 +120,11 @@
           <div class="rightTitle" data-aos="fade-left" data-aos-delay="300">
             <h1 class="rightTitleText">looking glass</h1>
           </div>
-          <div class="buyTicketContainer" data-aos="fade-right">
+          <div
+            class="buyTicketContainer"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
             <a href="#" class="mobileBuyTicket buyTicketLink"
               ><img src="./images/buyTicketsButton.png" alt=""
             /></a>
@@ -127,8 +148,8 @@
       </div>
     </section>
 
-    <hr data-aos="fade-down" />
-    <h2 data-aos="fade-down" class="textBetweenSections">
+    <hr data-aos="fade-up" />
+    <h2 data-aos="fade-up" data-aos-delay="200" class="textBetweenSections">
       About the conference
     </h2>
 
@@ -145,6 +166,7 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
+
             <div class="swiper-slide">
               <div class="carouselItem hideCategory">
                 <div class="visibleText">
@@ -161,6 +183,7 @@
                 </div>
               </div>
             </div>
+
             <div class="swiper-slide">
               <div class="carouselItem hideCategory">
                 <div class="visibleText">
@@ -177,6 +200,7 @@
                 </div>
               </div>
             </div>
+
             <div class="swiper-slide">
               <div class="carouselItem hideCategory">
                 <div class="visibleText">
@@ -193,6 +217,7 @@
                 </div>
               </div>
             </div>
+
             <div class="swiper-slide">
               <div class="carouselItem hideCategory">
                 <div class="visibleText">
@@ -226,6 +251,7 @@
           />
         </div>
       </div>
+
       <div class="highlightsContainer">
         <div class="speakerInfoContainer">
           <p class="speakerInfo">
@@ -251,6 +277,7 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
+
               <div class="swiper-slide slide">
                 <figure>
                   <img src="./images/merlin.png" alt="" class="speakerImage" />

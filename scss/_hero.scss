@@ -43,10 +43,11 @@
 .rightTitle {
   grid-area: rightTitle;
   position: relative;
-  top: -6rem;
+  top: -8rem;
+  left: -5rem;
   z-index: 1;
   text-align: right;
-  transform: translateX(-30%);
+  // transform: translateX(-30%);
 }
 
 .info {
@@ -87,10 +88,7 @@
     'lowerLeftGlass . . . lowerRightGlass';
 }
 
-.upperGlass,
-.midGlass,
-.lowerLeftGlass,
-.lowerRightGlass {
+.mobileGlass {
   position: relative;
   z-index: 4;
 }
@@ -152,11 +150,11 @@
     width: 100%;
     text-align: left;
     margin-bottom: 2rem;
+    z-index: 5;
   }
   .mobileBuyTicket {
     display: block;
     position: relative;
-    z-index: 3;
   }
   .glassContainer {
     display: none;
@@ -188,13 +186,12 @@
     width: 100%;
     text-align: left;
   }
-  .rightTitleText {
-    // text-align: center;
-  }
+
   .date {
     font-size: 2rem;
     flex-shrink: 0;
   }
+
   .infoText {
     font-size: 1rem;
   }
