@@ -78,19 +78,12 @@ hr {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  width: 1rem;
 }
 
 .navLink {
   text-decoration: none;
   color: white;
   font-family: "Neue Haas";
-}
-
-.hamburgerLine {
-  height: 5%;
-  width: 100%;
-  background: white;
 }
 
 @media (max-width: 30em) {
@@ -156,6 +149,7 @@ hr {
 .leftTitleText,
 .rightTitleText {
   font-size: 7rem;
+  font-family: "Everett Regular";
 }
 
 .leftTitle {
@@ -341,7 +335,7 @@ hr {
   margin-left: 5rem;
   font-size: 2.7rem;
   min-width: 60%;
-  max-width: 80%;
+  max-width: 60%;
 }
 
 .carouselContainer {
@@ -574,6 +568,7 @@ figure {
 
 figure > img {
   max-width: 320px;
+  float: left;
 }
 
 @media (max-width: 120em) {

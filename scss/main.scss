@@ -1,7 +1,5 @@
-@use './resets';
-@use './typography';
-@use './general';
-@use './header';
-@use './hero';
-@use './introSection';
-@use './highlightSection';
+@use './misc/index' as *;
+@use './header/index' as *;
+@use './hero/index' as *;
+@use './intro/index' as *;
+@use './highlights/index' as *;

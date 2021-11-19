@@ -34,6 +34,7 @@
 .leftTitleText,
 .rightTitleText {
   font-size: clamp(3rem, 7rem, 10rem);
+  font-family: 'Everett Regular';
 }
 
 .leftTitle {
@@ -127,81 +128,4 @@
   grid-area: glass;
   position: relative;
   z-index: 2;
-}
-
-@media (max-width: 120em) {
-  .infoText {
-    font-size: 2rem;
-  }
-}
-
-@media (max-width: 30em) {
-  .mobileGlassGrid {
-    display: grid;
-  }
-  .hero {
-    height: 100vh;
-  }
-  .leftTitleText,
-  .rightTitleText {
-    width: 90%;
-  }
-  .buyTicketContainer {
-    width: 100%;
-    text-align: left;
-    margin-bottom: 2rem;
-    z-index: 5;
-  }
-  .mobileBuyTicket {
-    display: block;
-    position: relative;
-  }
-  .glassContainer {
-    display: none;
-  }
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .rightTitle {
-    top: 0;
-    transform: none;
-    left: auto;
-    position: relative;
-    z-index: 5;
-  }
-  .leftTitleText,
-  .rightTitleText {
-    font-size: 3rem;
-    position: relative;
-    z-index: 3;
-  }
-  .leftTitle,
-  .rightTitle {
-    width: 100%;
-    text-align: left;
-  }
-
-  .date {
-    font-size: 2rem;
-    flex-shrink: 0;
-  }
-
-  .infoText {
-    font-size: 1rem;
-  }
-
-  .glassLeft,
-  .glassRight,
-  .glassAboveTitle {
-    display: none;
-  }
 }
