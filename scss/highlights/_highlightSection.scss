@@ -11,12 +11,11 @@
 }
 
 .highlightsContainer {
-  padding: 5rem;
   display: grid;
   grid-template-columns: 15% 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: 'info carousel';
-  margin-top: 5rem;
+  margin: 8rem auto;
   gap: 8rem;
 }
 
@@ -29,6 +28,10 @@
   overflow: hidden;
 }
 
+.speakerImage {
+  mix-blend-mode: multiply;
+}
+
 .speakerInfoContainer {
   color: white;
   grid-area: info;
@@ -37,7 +40,7 @@
   justify-content: space-between;
   flex-shrink: 0;
   background-color: black;
-  align-items: center;
+  align-items: flex-start;
   font-family: 'Neue Haas';
 }
 
@@ -45,14 +48,17 @@
   font-family: 'Everett Regular';
   font-size: 3rem;
   text-align: left;
-  span {
+  .numberOfSpeakers {
     font-size: 6rem;
     font-weight: bold;
+    letter-spacing: -5px;
   }
 }
 
 .highlightTitle {
   font-size: 3rem;
+  font-family: 'Everett Regular';
+  width: 10%;
 }
 
 .scheduleContainer {
@@ -63,6 +69,7 @@
 
 .scheduleText {
   font-size: 2rem;
+  font-family: 'Neue Haas';
 }
 
 .slide {
@@ -80,16 +87,13 @@
   cursor: pointer;
   z-index: 10;
   position: relative;
-  img {
-    &:last-child {
-      margin-left: 2em;
-    }
-  }
+  text-align: left;
+  width: 100%;
 }
 
 .speakerName,
 .speakerRole {
-  font-family: 'Tahoma';
+  font-family: 'Neue Haas TXPro';
   margin-top: 0.5rem;
 }
 
@@ -101,7 +105,7 @@
 }
 
 .speakerDescriptionContainer {
-  width: 250px;
+  width: 90%;
   text-align: left;
 }
 
@@ -111,7 +115,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: #51a8c7;
+  background: #a5e1f8;
   opacity: 0.4;
 }
 
@@ -123,6 +127,6 @@ figure {
 }
 
 figure > img {
-  max-width: 320px;
+  max-width: 100%;
   float: left;
 }

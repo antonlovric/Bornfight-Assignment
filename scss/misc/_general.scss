@@ -2,7 +2,6 @@ body {
   background: black;
   color: white;
   overflow-x: hidden;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 hr,
 .textBetweenSections {
@@ -16,6 +15,8 @@ hr {
 .textBetweenSections {
   font-size: 2rem;
   margin-bottom: 7rem;
+  margin-bottom: 0.2rem;
+  font-family: 'Neue Haas TXPro';
 }
 
 @media (max-width: 30em) {

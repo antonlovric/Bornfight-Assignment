@@ -1,32 +1,20 @@
-@media (max-width: 120em) {
-  .infoText {
-    font-size: 2rem;
+@media (max-width: 110em) {
+  .rightTitle {
+    left: auto;
   }
 }
 
-@media (max-width: 30em) {
-  .mobileGlassGrid {
-    display: grid;
+@media (max-width: 75em) {
+  .rightTitleText,
+  .leftTitleText {
+    font-size: 7rem;
   }
   .hero {
     height: 100vh;
   }
   .leftTitleText,
   .rightTitleText {
-    width: 90%;
-  }
-  .buyTicketContainer {
-    width: 100%;
-    text-align: left;
-    margin-bottom: 2rem;
-    z-index: 5;
-  }
-  .mobileBuyTicket {
-    display: block;
-    position: relative;
-  }
-  .glassContainer {
-    display: none;
+    width: 80%;
   }
   .container {
     display: flex;
@@ -37,8 +25,7 @@
   .grid {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-left: 3rem;
   }
   .rightTitle {
     top: 0;
@@ -49,7 +36,7 @@
   }
   .leftTitleText,
   .rightTitleText {
-    font-size: 3rem;
+    font-size: 6rem;
     position: relative;
     z-index: 3;
   }
@@ -60,7 +47,8 @@
   }
 
   .date {
-    font-size: 2rem;
+    font-size: 5rem;
+    font-weight: bold;
     flex-shrink: 0;
   }
 
@@ -72,8 +60,6 @@
     font-size: 1rem;
   }
 
-  .glassLeft,
-  .glassRight,
   .glassAboveTitle {
     display: none;
   }

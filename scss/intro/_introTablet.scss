@@ -1,0 +1,23 @@
+@media (max-width: 75em) {
+  .introText {
+    min-width: 80%;
+    max-width: 80%;
+  }
+  .carouselContainer {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .carouselItem {
+    .visibleText {
+      padding-left: 1em;
+      padding-left: 1em;
+      .categoryAbbr {
+        font-size: 5rem;
+        font-weight: bold;
+      }
+      .categoryTitle {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
