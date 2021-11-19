@@ -300,6 +300,9 @@ hr {
   .rightTitle {
     top: 0;
     transform: none;
+    left: auto;
+    position: relative;
+    z-index: 5;
   }
 
   .leftTitleText,
