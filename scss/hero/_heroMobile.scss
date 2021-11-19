@@ -28,44 +28,25 @@
   .glassContainer {
     display: none;
   }
-  .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
+
   .grid {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 0;
   }
-  .rightTitle {
-    top: 0;
-    transform: none;
-    left: auto;
-    position: relative;
-    z-index: 5;
-  }
+
   .leftTitleText,
   .rightTitleText {
     font-size: 3rem;
-    position: relative;
-    z-index: 3;
   }
-  .leftTitle,
-  .rightTitle {
-    width: 100%;
-    text-align: left;
+
+  .midGlass {
+    position: relative;
+    left: -1.5em;
   }
 
   .date {
     font-size: 2rem;
-    flex-shrink: 0;
-  }
-
-  .infoContainer {
-    gap: 1rem;
   }
 
   .infoText {

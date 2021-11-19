@@ -40,6 +40,9 @@
 
 .leftTitle {
   grid-area: leftTitle;
+  padding-left: 5rem;
+  padding-top: 3rem;
+  width: 98%;
 }
 
 .rightTitle {
@@ -54,6 +57,8 @@
 
 .info {
   grid-area: info;
+  padding-left: 5rem;
+  padding-top: 3rem;
 }
 
 .infoContainer {
@@ -134,5 +139,6 @@
 .glassAboveTitle {
   grid-area: glass;
   position: relative;
+  top: -3rem;
   z-index: 2;
 }

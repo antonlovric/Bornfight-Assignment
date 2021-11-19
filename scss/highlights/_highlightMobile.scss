@@ -3,42 +3,8 @@
     flex-direction: column;
     gap: 2rem;
   }
-  .highlights {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin-bottom: 5rem;
-  }
 
-  .speakerDescriptionContainer {
-    width: 100%;
-  }
   .highlightsContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    gap: 1rem;
-  }
-  .navButtonContainer {
-    display: none;
-  }
-  .speakerInfoContainer {
-    width: 90%;
-    text-align: left;
-  }
-  .speakerInfo {
-    width: 100%;
-    font-size: 2rem;
-
-    span {
-      font-size: 3.5rem;
-    }
-  }
-  .slide {
-    padding: 0.2em;
-  }
-  .swiperContainer {
-    width: 100%;
+    margin-top: 3rem;
   }
 }

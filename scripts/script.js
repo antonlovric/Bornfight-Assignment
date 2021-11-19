@@ -1,5 +1,10 @@
 var swiper = new Swiper('.swiper', {
   breakpoints: {
+    200: {
+      allowTouchMove: true,
+      slidesPerView: 1.2,
+      spaceBetween: 10,
+    },
     300: {
       allowTouchMove: true,
       slidesPerView: 1.2,
@@ -34,6 +39,11 @@ var swiper = new Swiper('.swiper', {
 
 var highlightSwiper = new Swiper('.highlightSwiper', {
   breakpoints: {
+    200: {
+      allowTouchMove: true,
+      slidesPerView: 1.2,
+      spaceBetween: 10,
+    },
     300: {
       allowTouchMove: true,
       slidesPerView: 1.2,
