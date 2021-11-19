@@ -47,7 +47,7 @@ hr {
 }
 .header {
   color: white;
-  padding: 3em 3em 3em 1.5em;
+  padding: 3em 6em 3em 6em;
   width: 100%;
   z-index: 2;
   display: flex;
@@ -541,7 +541,7 @@ hr {
   font-weight: 200;
 }
 .speakerRole strong {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .speakerDescriptionContainer {
