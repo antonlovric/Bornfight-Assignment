@@ -1,4 +1,7 @@
 @media (max-width: 30em) {
+  .highlights {
+    overflow-x: hidden;
+  }
   .highlightHeading {
     flex-direction: column;
     gap: 2rem;

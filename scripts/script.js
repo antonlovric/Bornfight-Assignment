@@ -84,7 +84,7 @@ items.forEach((item) => {
   item.addEventListener('mouseleave', function () {
     toggleCategory(item);
   });
-  if (window.innerWidth < 500) {
+  if (window.innerWidth < 700) {
     item.addEventListener('click', function () {
       toggleCategory(item);
     });
