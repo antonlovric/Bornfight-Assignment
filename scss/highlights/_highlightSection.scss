@@ -11,10 +11,8 @@
 }
 
 .highlightsContainer {
-  display: grid;
-  grid-template-columns: 15% 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: 'info carousel';
+  position: relative;
+  display: flex;
   margin: 8rem auto;
   gap: 8rem;
 }
@@ -24,16 +22,12 @@
 }
 
 .swiperContainer {
-  grid-area: carousel;
-}
-
-.speakerImage {
-  mix-blend-mode: multiply;
+  width: 80%;
+  overflow: hidden;
 }
 
 .speakerInfoContainer {
   color: white;
-  grid-area: info;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -41,6 +35,7 @@
   background-color: black;
   align-items: flex-start;
   font-family: 'Neue Haas';
+  width: 20%;
 }
 
 .speakerInfo {
